@@ -1,6 +1,6 @@
 import React from "react";
-import "./gamecontainer.css";
+import "./GameContainer.css";
 
-const Wrapper = props => <div className="wrapper">{props.children}</div>;
+const GameContainer = () => <div></div>;
 
-export default Wrapper;
+export default GameContainer;

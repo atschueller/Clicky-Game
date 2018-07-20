@@ -1,17 +1,28 @@
-import React from 'react';
-import './App.css';
-import wrapper from './components/Wrapper';
-import nav from './components/nav';
-import header from './components/header';
-import gamecard from './components/gamecarfd';
+import React from "react";
+import GameContainer from "./components/Gamecontainer/GameContainer.js";
+import Nav from "./components/Nav/Nav.js";
+import Header from "./components/Header/Header.js";
+import Gamecard from "./components/GameCard/GameCard.js";
+import "./App.css";
 
-class App extends Compenent {
-  state = {
-    message: "Click an image to begin!",
-    topScore: 0,
-    curScore: 0,
-    images: images,
-    unselectedimages: images
-};
-
+class App extends React.Component {
+  render() {
+    return (
+     <GameContainer>
+        <Nav />
+        <Header />
+        <Gamecard /> 
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+        <Gamecard />
+      </GameContainer>
+    );
+  }
 }
+export default App;
